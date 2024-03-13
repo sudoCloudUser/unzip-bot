@@ -228,7 +228,6 @@ I can extract any archive, with password or not, splitted…
 Send **/commands** to learn more
 
 **Deployed with love ❤️ by @Lyrical_vr**
-**/donate** if you can 🥺
     """
 
     HELP_TXT = """
