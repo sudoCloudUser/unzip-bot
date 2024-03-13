@@ -119,7 +119,7 @@ This may take a while, go grab a coffee ☕️
 
     LOG_CHECKED = "Log channel checked"
 
-    BOT_RUNNING = "Bot is running now ! Join @EDM115bots"
+    BOT_RUNNING = "Bot is running now ! 👻"
 
     WRONG_LOG = """
 Error : the provided **LOGS_CHANNEL** (`{}`) is incorrect
@@ -185,8 +185,6 @@ have been saved from the URL
 
 
 **⚠ IN ALL CASES ⚠**, please send **/clean**, else you can't send any other task 🙂🔫
-
-Please report this at @EDM115_chat if you think this is a serious error
     """
 
     HOW_MANY_UPLOADED = "`{}` file(s) have been extracted from that archive"
@@ -229,7 +227,7 @@ Hi **{}** 👋, I'm **Unarchiver bot** 🥰
 I can extract any archive, with password or not, splitted…
 Send **/commands** to learn more
 
-**Made with ❤️ by @EDM115bots**
+**Deployed with love ❤️ by @Lyrical_vr**
 **/donate** if you can 🥺
     """
 
@@ -504,10 +502,8 @@ Use the **/merge** command
 
     QUERY_PARSE_ERR = """
 Fatal query parsing error 💀
-
-Please contact @EDM115_chat with details and screenshots
     """
-
+    
     GIVE_NEW_NAME = """
 Current file name : `{}`
 
