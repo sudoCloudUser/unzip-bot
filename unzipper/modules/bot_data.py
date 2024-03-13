@@ -11,7 +11,7 @@ class Messages:
 
     STATS_BTN = "Stats 📊"
 
-    DONATE = "Donate 💸"
+    DONATE = "Deployed by 👺"
 
     REFRESH = "Refresh ♻️"
 
@@ -33,7 +33,7 @@ class Messages:
 
     DELETE = "Delete 🚮"
 
-    RATE = "Rate me ⭐"
+    RATE = "Owner? 👾"
 
     # start.py
 
@@ -62,15 +62,13 @@ Your task was stopped, kindly send it again
     TASK_EXPIRED = """
 Your task was running for more than {} minutes, it has been stopped
 
-Don't go AFK next time 😉
+Don't go AFK next time 👾
     """
 
     # database.py
 
     BANNED = """
 **Sorry you're banned 💀**
-
-Report this at @EDM115_chat if you think this is a mistake, I may unban you
     """
 
     NEW_USER_BAD = """
@@ -100,7 +98,7 @@ This may take a while, go grab a coffee ☕️
 {}
 {}
 
-**Powered by @EDM115bots**
+**Keep calm 👾**
     """
 
     PROCESSING = "**Processing…**"
@@ -156,8 +154,6 @@ Select the extraction mode for that merged file 👀
 
     EXT_CAPTION = """
 `{}`
-
-Successfully extracted by @unzip_edm115bot 🥰
     """
 
     REPORT_TEXT = """
@@ -230,7 +226,7 @@ Use **/merge** to start one
     START_TEXT = """
 Hi **{}** 👋, I'm **Unarchiver bot** 🥰
 
-I can extract any archive, with password or not, splitted, …
+I can extract any archive, with password or not, splitted…
 Send **/commands** to learn more
 
 **Made with ❤️ by @EDM115bots**
@@ -252,15 +248,6 @@ Send **/commands** to learn more
     **1.** If your archive is password protected select `🔐` button
     **2.** Please don't send corrupted files ! If you sent one by mistake just send **/clean**
     **3.** If your archive have +95 files in it then bot can't show all of extracted files to select from (yet). So in that case if you can't see your file in the buttons just click on `Upload all 📤` button. It will send all extracted files to you !
-
-
-**• Got an error ?**
-    Visit edm115.dev/unzip#help
-
-
-**• I wanna have help 🥺**
-
-    PM me at **@EDM115** or join the chat **@EDM115_chat**
     """
 
     ABOUT_TXT = """
@@ -276,26 +263,7 @@ Made with ❤️ by **@EDM115bots**
     """
 
     DONATE_TEXT = """
---**NOT AVAILABLE YET !**--
-
-I'm going to be honest : **this bot costs me money**…
-Nothing's free on this world, however I try to keep this bot for free for as many people as possible
-I don't like to put restrictions, nor getting your PM's flooded with ads…
-
-So if you can, donate :)
-It helps out a ton, covers the costs (hosting, updating, … 👨‍💻)
-
---How ?--
-• **[Paypal](https://www.paypal.me/8EDM115)**
-• **[GitHub Sponsors](https://github.com/sponsors/EDM115)**
-• **[Directly in Telegram](https://t.me/EDM115bots/544)**
-• **[BuyMeACoffee](https://www.buymeacoffee.com/edm115)**
-• **[Send cryptos (not recommended)](https://edm115.shadd.eu.org/)**
-
-Thanks for your contribution 😊
-
---Side note :--
-Donation doesn't count as a VIP subscription. Check **/vip** for more info
+**This service is brought to you by @lyrical_vr ! Say hi !
     """
 
     VIP_INFO = """
@@ -457,8 +425,6 @@ Do you really want to delete your thumbnail ?
 **Error happened 😕**
 
 `{}`
-
-Please report this at @EDM115_chat if you think this is a serious error
     """
 
     CANCELLED_TXT = "**{} ✅**"
@@ -512,7 +478,6 @@ That's not an archive 💀
 
     DEF_NOT_AN_ARCHIVE = """
 This file is NOT an archive 😐
-If you believe it's an error, send the file to **@EDM115**
     """
 
     PROCESSING2 = "`Processing… ⏳`"
@@ -557,8 +522,6 @@ Please send the new file name (**--INCLUDE THE FILE EXTENTION !--**)
 
     UPLOADED = """
 **Successfully uploaded ✅**
-
-**Join @EDM115bots ❤️**
     """
 
     NO_FILE_LEFT = "There's no file left to upload"
@@ -577,7 +540,6 @@ Please send the new file name (**--INCLUDE THE FILE EXTENTION !--**)
 
     PROCESS_RUNNING = """
 Already one process is running, don't spam 😐
-
 Send **/clean** if you want to process a new file
     """
 
@@ -675,7 +637,7 @@ If it fails again, it means that {} haven't started the bot yet (or deleted the 
     REPORT_DONE = """
 Report sucessfully sent ! An answer will arrive soon
 
-Note : if you need to reply to replies, always use that /report command (or join **@EDM115_chat**)
+Note : if you need to reply to replies, always use that /report command
     """
 
     BAN_ID = "Give an user id to ban 😈"
@@ -785,7 +747,6 @@ Here is the list of the commands you can use (only in private btw) :
 **/start** : To know if I'm online
 **/help** : Gives a simple help
 **/about** : Know more about me
-**/donate** : Know how you can contribute to this bot
 **/clean** : Remove your files from my server. Also useful if a task failed
 **/mode** : Change your upload mode (either `doc` or `media`)
 **/stats** : Know all the current stats about me
@@ -795,7 +756,6 @@ Here is the list of the commands you can use (only in private btw) :
 **/addthumb** : Upload with a custom thumbnail
 **/delthumb** : Removes your thumbnail
 **/report** : Used by replying to a message, sends it to the bot owner (useful for bug report, or any question)
-**/vip** : __Not available yet__ Know more about the VIP subscription
 **/commands** : This message
     """
 
@@ -815,7 +775,7 @@ Here's all the commands that only the owner (you) can use :
 **/maintenance** : Put the bot in or out of maintenance mode. No tasks can be processed while on
 **/cleanall** : Same as `/clean`, but for the whole server
 **/cleantasks** : Same as `/cleanall`, plus removes them from the database
-**/logs** : Send you the logs (all of them). Useful for bug tracking. Send them to **@EDM115** if you don't understand them/need help
+**/logs** : Send you the logs (all of them). Useful for bug tracking. 
 **/restart** : Does a basic restart, less intrusive as the `/redbutton` one
 **/dbexport** : ~~Exports the whole database as CSV~~ __Does nothing yet__
 **/addvip {user_id, subscription, ends, used, billed, early, donator, started, successful, gap, gifted, referral, lifetime}** : __Not available yet__ Add an user to the VIP database
@@ -1043,7 +1003,7 @@ class Buttons:
         [
             [
                 InlineKeyboardButton(
-                    Messages.RATE, url="https://t.me/BotsArchive/2705"
+                    Messages.RATE, url="https://t.me/lyrical_vr"
                 ),
                 InlineKeyboardButton(Messages.DONATE, callback_data="donatecallback"),
             ],
