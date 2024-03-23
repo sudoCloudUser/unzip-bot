@@ -62,11 +62,21 @@ def sufficient_disk_space(required_space):
 async def _(_, message: Message):
     await check_user(message)
     uid = message.from_user.id
+    
     if uid != Config.BOT_OWNER and await get_maintenance():
-        await message.reply(Messages.MAINTENANCE_ON)
-        return
+        await messa        return
+    
     if uid == Config.BOT_OWNER:
         return
+    
+    try:
+        member = await unzipperbot.get_chat_member(Config.AUTH_GROUP, uid)
+        if member.status not in [enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.MEMBER]:
+            await message.reply("Unauthorized")
+            return
+    except Exception as e:
+        await message.reply("Unauthorized")
+        return    
     if await count_ongoing_tasks() >= Config.MAX_CONCURRENT_TASKS:
         ogtasks = await get_ongoing_tasks()
         if not any(uid == task["user_id"] for task in ogtasks):
