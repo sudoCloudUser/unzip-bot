@@ -64,7 +64,8 @@ async def _(_, message: Message):
     uid = message.from_user.id
     
     if uid != Config.BOT_OWNER and await get_maintenance():
-        await messa        return
+        await message.reply(Messages.MAINTENANCE_ON)
+        return
     
     if uid == Config.BOT_OWNER:
         return
