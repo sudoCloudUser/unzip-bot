@@ -72,7 +72,7 @@ async def _(_, message: Message):
     
     try:
         member = await unzipperbot.get_chat_member(Config.AUTH_GROUP, uid)
-        if member.status not in [enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.MEMBER]:
+        if member.status not in {enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.MEMBER}:
             await message.reply("Unauthorized")
             return
     except Exception as e:
