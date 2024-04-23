@@ -64,14 +64,15 @@ async def _(_, message: Message):
     uid = message.from_user.id
     
     if uid != Config.BOT_OWNER and await get_maintenance():
-        await messa        return
+        await message.reply(Messages.MAINTENANCE_ON)
+        return
     
     if uid == Config.BOT_OWNER:
         return
     
     try:
         member = await unzipperbot.get_chat_member(Config.AUTH_GROUP, uid)
-        if member.status not in [enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.MEMBER]:
+        if member.status not in {enums.ChatMemberStatus.OWNER, enums.ChatMemberStatus.ADMINISTRATOR, enums.ChatMemberStatus.MEMBER}:
             await message.reply("Unauthorized")
             return
     except Exception as e:
